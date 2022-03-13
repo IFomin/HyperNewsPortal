@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+<form action="" method="get">{% csrf_token %}
+  <p>Search news:</p>
+  <input type="text" name="q">
+  <p><button type="submit">Search</button><p>
+  <a href="/news/">Back to news</a>
+</body>
+</html>
